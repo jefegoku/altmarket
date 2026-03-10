@@ -1,0 +1,188 @@
+/* Global reset: Removes default margins and padding from all elements */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Body styles: Sets full height background image and font family for the entire page */
+body{
+    min-height: 100vh;
+    background-image: url(fuck.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: helvetica, sans-serif;
+}
+/* Navigation bar styles: Background, shadow, and positioning */
+nav{
+    background-color: whitesmoke;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding: 8px 20px;
+}
+/* Navigation list: Flexbox layout for horizontal alignment */
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* Navigation list items: Height setting */
+nav li{
+    height: 50px;
+}
+/* Navigation links: Styling for anchor tags in nav */
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+/* Navigation link hover effect */
+nav a:hover{
+    background-color: #f0f0f0;
+}
+/* First navigation item (Home): Pushes it to the left */
+nav li:first-child{
+    margin-right: auto;
+}
+
+/* Search bar positioning: Centers the search bar in the navbar */
+.search{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    width: max-content;
+    border-radius: 28px;
+}
+/* Search icon styling */
+.search .material-symbols-outlined{
+    margin-right: 6px;
+    font-size: 20px;
+}
+/* Search input field styling */
+.search-input{
+    border: none;
+    outline: none;
+    background: #f6f6f6;
+    padding: 14px;
+    width: max-content;
+    border-radius: 28px;
+}
+
+/* Account dropdown container */
+.account-dropdown {
+    position: relative;
+}
+
+/* Account button styling */
+.account-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    height: 100%;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+/* Account button hover effect */
+.account-btn:hover {
+    background-color: #f0f0f0;
+}
+
+/* Dropdown menu styling: Hidden by default */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    min-width: 150px;
+    z-index: 10;
+}
+
+/* Active dropdown menu: Shows the menu when toggled */
+.dropdown-menu.active {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Dropdown menu links styling */
+.dropdown-menu a {
+    padding: 12px 20px;
+    text-decoration: none;
+    color: black;
+    display: block;
+    height: auto;
+}
+
+/* Dropdown menu link hover effect */
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Sign-in link and auth page styles */
+/* Sign-in link styling in navigation */
+.signin-link {
+    height: 100%;
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: black;
+    text-decoration: none;
+}
+/* Sign-in link icon size */
+.signin-link .material-symbols-outlined { font-size: 20px; }
+/* Sign-in text styling */
+.signin-text { font-size: 14px; }
+
+/* Authentication page layout */
+.auth-page {
+    max-width: 480px;
+    margin: 80px auto;
+    padding: 24px;
+}
+/* Authentication card container */
+.auth-card {
+    background: rgba(255,255,255,0.98);
+    border-radius: 8px;
+    padding: 18px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.06);
+    box-sizing: border-box;
+}
+/* Auth card heading */
+.auth-card h1 { font-size: 20px; margin-bottom: 12px; }
+/* Auth tabs container */
+.auth-tabs { display: flex; gap: 8px; margin-bottom: 12px; }
+/* Tab buttons styling */
+.tab-btn { padding: 8px 12px; border-radius: 6px; border: 1px solid #eee; background: #fff; cursor: pointer; }
+/* Active tab styling */
+.tab-btn.active { background: #111; color: #fff; }
+/* Auth input fields */
+.auth-input { width: 100%; padding: 10px; margin-bottom: 12px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; }
+/* Auth actions container */
+.auth-actions { display: flex; gap: 8px; margin-bottom: 12px; }
+/* Auth buttons */
+.auth-btn { flex: 1; padding: 10px; border: none; border-radius: 6px; background: #111; color: #fff; cursor: pointer; box-sizing: border-box; }
+/* Social login buttons container */
+.socials { display: flex; flex-direction: column; gap: 8px; }
+/* Social login buttons */
+.social-btn { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; background: #fff; cursor: pointer; text-align: left; box-sizing: border-box; }
+/* Auth footer */
+.auth-footer { margin-top: 12px; }
+/* Small text styling */
+.small { font-size: 13px; color: #555; }
+
+/* Hidden class for toggling visibility */
+.hidden { display: none; }
