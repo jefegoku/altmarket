@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
+$servername = "149.22.84.143:5618";
 $username = "root";
 $password = "";
-$dbname = "my_database";
+$dbname = "altmarket
 
 // Create connection
 $conn = mysqli_connect($servername, $username, $password, $dbname);
