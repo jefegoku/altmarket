@@ -1,48 +1,74 @@
 <!DOCTYPE html>
-<html class="w-[1440px] h-[3916px] bg-white ">
+<html>
     <head>
         <title> ALTMARKET </title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="productgrid.css">
         <link rel="stylesheet" href="navbar.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Jim+Nightshade&display=swap" rel="stylesheet">
         <link href="./src/output.css" rel="stylesheet">
         <style>
+            .container {
+                display: flex;
+                background-color: DodgerBlue;
+            }
             .navbar{
-                    font-family: "Jim Nightshade", cursive;
+                font-family: "Jim Nightshade", cursive;
             }
         </style>
     </head>
     <body>
-        <div class="navbar">
+        <div class="navbar fixed-top">
             <div class="logo"> 
                 <span class="big-logo">ALTMARKET</span>
                 <span class="small-logo">.store</span>
             </div>
-            <form role="search" aria-label="Site search">
-            <label for="site-search" class="sr-only">Search products</label>
-            <input id="site-search" class="rectangle-2" type="search" name="search" />
-            <button class="rectangle-3" type="submit" aria-label="Search">
-            <span class="text-wrapper-4">search</span>
-            <img class="search-icon" src="img/search-icon.svg" alt="" aria-hidden="true" />
-            </button>
-            </form>
-            <a href="#" class="rectangle-4" aria-label="Log in">
-            <span class="text-wrapper">login</span>
-            </a>
-            <a href="#" class="rectangle-7" aria-label="Sign up">
-            <span class="text-wrapper-5">signup</span>
-            </a>
-            <a href="#" class="rectangle-5" aria-label="Cart">
-            <span class="text-wrapper-2">cart</span>
-            </a>
-            <a href="#" class="rectangle-6" aria-label="Forum">
-            <span class="text-wrapper-3">forum</span>
-            </a>
-            <p class="p">Sign up or log in now to join a growing alternative community!</p>
+            <div class="search-bar">
+                <form role="search" aria-label="Site search">
+                <label for="site-search" class="sr-only">Search products</label>
+                <input id="site-search" class="rectangle-2" type="search" name="search" />
+                <button class="rectangle-3" type="submit" aria-label="Search">
+                <span class="text-wrapper-4">search</span>
+                <img class="search-icon" src="img/search-icon.svg" alt="" aria-hidden="true" />
+                </button>
+                </form>
+            </div>
+            <div class="small-button-cont">
+                <div class="log-in-nav-cont small-button">
+                    <a href="#" class="log-in-nav" aria-label="Log in">
+                    <span class="text-wrapper">login</span>
+                    </a>
+                </div>
+                <div class="log-in-nav-cont small-button">
+                    <a href="#" class="sign-up-nav" aria-label="Sign up">
+                    <span class="text-wrapper-5">signup</span>
+                    </a>
+                </div>
+                <div class="log-in-nav-cont small-button">
+                    <a href="#" class="cart-nav" aria-label="Cart">
+                    <span>cart</span>
+                    </a>
+                </div>
+                <div class="log-in-nav-cont small-button">
+                    <a href="#" class="forum-nav" aria-label="Forum">
+                    <span>forum</span>
+                    </a>
+                </div>   
+            </div>
+            
+            <div class="herobanner">
+                <p class="hero-banner-content">Sign up or log in now to join a growing alternative community!</p>
+            </div>
         </div>
-        <div class="content">
+        <div class="productGrid">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div>5</div>                          
         </div>
+
     </body>
 </html>
